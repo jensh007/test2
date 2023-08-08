@@ -19,7 +19,7 @@ jobs:
         script: |
           github.rest.issues.createComment({
             issue_number: 1,
-            owner: jensh007,
-            repo: test1,
+            owner: 'jensh007',
+            repo: 'test1',
             body: 'Test results go here!'
             })
