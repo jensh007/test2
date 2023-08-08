@@ -14,12 +14,3 @@ jobs:
         repo: jensh007/test1
         type: ocm_pr
         payload: '{ "ref": "${{ github.ref }}", "sha": "${{ github.sha }}" }'
-    - uses: actions/github-script@v6
-      with:
-        script: |
-          github.rest.issues.createComment({
-            issue_number: 1,
-            owner: 'jensh007',
-            repo: 'test1',
-            body: 'Test results go here!'
-            })
