@@ -1,0 +1,13 @@
+name: pr_check
+on:
+  pull_request:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: first test
+      run: |
+        echo "First test successful"
+    - name: second test
+      run: |
+        echo "Second test successful"
