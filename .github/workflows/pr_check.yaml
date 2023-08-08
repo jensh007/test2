@@ -8,7 +8,7 @@ jobs:
     - name: Repository Dispatch
       uses: myrotvorets/trigger-repository-dispatch-action@1.0.0
       with:
-        token: ${{ secrets.TRIGGGER_EVENT }}
+        token: ${{ secrets.TRIGGER_EVENT }}
         repo: jensh007/test1
         type: ocm_pr
         payload: '{ "ref": "${{ github.ref }}", "sha": "${{ github.sha }}" }'
