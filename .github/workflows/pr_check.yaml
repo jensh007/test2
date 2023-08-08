@@ -5,9 +5,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: first test
-      run: |
-        echo "First test successful"
-    - name: second test
-      run: |
-        echo "Second test successful"
+    - name: Repository Dispatch
+      uses: myrotvorets/trigger-repository-dispatch-action@1.0.0
+      with:
+        token: ${{ secrets.TRIGGGER_EVENT }}
+        repo: jensh007/test1
+        type: ocm_pr
+        payload: '{ "ref": "${{ github.ref }}", "sha": "${{ github.sha }}" }'
