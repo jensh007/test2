@@ -18,4 +18,4 @@ jobs:
         token: ${{ secrets.TRIGGER_EVENT }}
         repo: jensh007/test1
         type: ocm_pr
-        payload: '{ "ref": "${{ github.ref }}", "sha": "${{ github.sha }}", "pr: "${{ env.PR_NUMBER }}" }'
+        payload: '{ "ref": "${{ github.ref }}", "sha": "${{ github.sha }}", "pr": "${{ env.PR_NUMBER }}" }'
