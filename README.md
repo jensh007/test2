@@ -5,4 +5,4 @@ Another test repository
 
 * added a useful comment
 * more stuff
-*
+* foo
